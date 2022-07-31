@@ -9,6 +9,7 @@ body{
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
+    overflow-y: hidden;
     margin: 0;
     color: #222;
     background-color: #333;
@@ -19,8 +20,9 @@ body{
     transform-origin: top left;
     transition: transform 0.5s linear;
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     padding: 50px;
+    overflow-y: scroll;
 
 }
 
@@ -32,6 +34,7 @@ body{
     position: fixed;
     top: -100px;
     left: -100px;
+    z-index: 10;
 }
 
 .circle{
@@ -43,7 +46,7 @@ body{
     transition: transform 0.5s linear;
 }
 
-.container.show-nav .circle{
+.circle.show-nav{
     transform: rotate(-70deg);
 }
 
