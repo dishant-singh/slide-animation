@@ -43,7 +43,7 @@ body{
     transition: transform 0.5s linear;
 }
 
-.container.show-nav.circle{
+.container.show-nav .circle{
     transform: rotate(-70deg);
 }
 
@@ -64,7 +64,7 @@ body{
 }
 
 .circle button#open{
-    left: 650%;
+    left: 60%;
 }
 
 .circle button#close{
